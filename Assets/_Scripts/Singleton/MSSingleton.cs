@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class MSSingleton<T> : MonoBehaviour where T : MSSingleton<T>
 {
+
     private static T instance;
     public static T Instance
     {
@@ -46,5 +47,5 @@ public class MSSingleton<T> : MonoBehaviour where T : MSSingleton<T>
             instance = null;
         }
     }
-}
 
+}

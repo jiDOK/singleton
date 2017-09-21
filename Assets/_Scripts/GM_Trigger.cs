@@ -1,4 +1,3 @@
-using System.Collections;
 using UnityEngine;
 
 public class GM_Trigger : MonoBehaviour
@@ -8,9 +7,11 @@ public class GM_Trigger : MonoBehaviour
     {
         //GameManager gameManager = GameManager.instance;
     }
+
     void Start()
     {
-        //GameManager gameManager = GameManager.instance;
+        // request GameManager even though there is none instantiated
+        GameManager gameManager = GameManager.instance;
     }
 
 }
